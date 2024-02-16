@@ -1,6 +1,7 @@
 package Infinite.SeleniumAssessment.Day1;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -43,6 +44,12 @@ public static void main(String[] args) {
 	WebElement signup=driver.findElement(By.xpath("//input[@type='submit']"));
 	signup.click();
 	
+	JavascriptExecutor js=(JavascriptExecutor)driver;
+//	js.executeScript("window.scrollTo(0,4800)");
+	WebElement mHover=driver.findElement(By.xpath("//button[@id=\"mousehover\"]"));
+	js.executeScript("arguments[0].scrollIntoView();",mHover);
+	Thread.sleep(3000);
+	//{behavior:'smooth',block:'center'}
 	
 	
 	

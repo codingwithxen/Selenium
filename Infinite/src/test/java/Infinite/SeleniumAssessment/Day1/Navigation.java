@@ -22,8 +22,8 @@ public static void main(String[] args) {
 	WebElement SearchInput=driver.findElement(By.cssSelector("textarea#APjFqb"));
 	SearchInput.sendKeys("Hero Honda Splendor");
 	
-	WebDriverWait wait1=new WebDriverWait(driver, 3);
-	wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"lJ9FBc\"]//center//*[@class=\"gNO89b\"]")));
+//	WebDriverWait wait1=new WebDriverWait(driver, );
+//	wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"lJ9FBc\"]//center//*[@class=\"gNO89b\"]")));
 	
 	WebElement SearchButton=driver.findElement(By.xpath("//div[@class=\"lJ9FBc\"]//center//*[@class=\"gNO89b\"]"));
 	SearchButton.click();
@@ -31,8 +31,8 @@ public static void main(String[] args) {
 	JavascriptExecutor scroller=(JavascriptExecutor) driver;
 	scroller.executeScript("window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});",SearchButton );
 	
-	WebDriverWait wait2=new WebDriverWait(driver, 3);
-	wait2.until(ExpectedConditions.elementToBeClickable("//span[@class='RVQdVd']"))
+//	WebDriverWait wait2=new WebDriverWait(driver, 3);
+//	wait2.until(ExpectedConditions.elementToBeClickable("//span[@class='RVQdVd']"))
 	
 	driver.close();
 	

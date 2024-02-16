@@ -147,8 +147,8 @@ public static void main(String[] args) {
 	Dclick.doubleClick(dClick).perform();
 	
 //	WebElement test=driver.findElement(By.xpath("//*[@id='mousehover']"));
-	WebDriverWait wait2=new WebDriverWait(driver, 10);
-	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("nothing")));
+//	WebDriverWait wait2=new WebDriverWait(driver, 10);
+//	wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("nothing")));
 	
 	
    
